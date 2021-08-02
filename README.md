@@ -1,7 +1,3 @@
-# coding-test
-Project for web developer candidates
-
-
 ## Input
 A csv file `enroll_data.csv` in a dropbox folder named `recruitment_project` with columns:
 > site ID, date of consent, cohort, birth date
