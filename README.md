@@ -47,6 +47,8 @@ Write a web application in JavaScript, HTML, CSS with--
    * X axis is site, Y-axis is enrollment by cohort
    * X axis is site, Y-axis is enrollment by age group (in increment of 10 years)
 
+You may use any JavaScript library you want.
+
   <details>
   <summary>Sample Output</summary>
   
