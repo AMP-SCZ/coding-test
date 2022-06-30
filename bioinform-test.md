@@ -87,19 +87,20 @@ The shared Dropbox folder contains three images:
 
 #### Workflow
     
-1. Register the given T1 image to the space of atlas
+1. Register the given T1 image to the space of `atlas-T1w.nii.gz`
 
-   You must make a subprocess call to ANTs executable `antsRegistrationSyNQuick.sh` from Python script.
+   You can do it directly in your terminal.
    
    <details><summary>Hint</summary>
   
-   After installing the ANTs package, you may do `antsRegistrationSyNQuick.sh --help` to form the sequence of
-   arguments to pass to `antsRegistrationSyNQuick.sh`.
+   After installing the ANTs package, you may do `antsRegistration --help` to learn about the sequence of
+   arguments to pass to `antsRegistration`.
   
    </details>
-   
-2. The registered image will contain only integer lables. Computationally, it is a 3-D volume.
-   Binarize it for each label and count the number of 1's.
+
+2. Now your registered image is in the space of the atlas and is ready to superimpose on the atlas.
+   Binarize your atlas for each integer label present in it. Multiply the registered image with the binary image.
+   Count the number of 1's in the resultant image. This count gives you the volume of that brain region.
 
 3. Do string processing of the look up table to extract the first and second columns.
 
