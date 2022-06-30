@@ -1,11 +1,12 @@
 The coding test consists of one arithmatic task and one neuroimaging task. 
 Both will appear at work at our laboratory. Please create a GitHub repository with all your codes 
-and write a skeletal README.md describing your workflow. No need to go overboard with writing README.md. 
+and write a skeletal `README.md` describing your workflow. No need to go overboard with writing README.md. 
 We want to see if you know about this standard software archiving process.
 
 
 
 ### Task 1
+
 *Download*
 * We have shared the above folder with you. You will be required to upload your results there. To be able to do that, you need a dropbox account. Create one if you do not have it already.
 * Write Python code to pull the csv from dropbox using their [API](https://github.com/dropbox/dropbox-sdk-python).
