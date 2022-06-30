@@ -8,7 +8,7 @@ We want to see if you know about this standard software archiving process.
 ### Task 1
 
 *Download*
-* We have shared the above folder with you. You will be required to upload your results there. To be able to do that, you need a dropbox account. Create one if you do not have it already.
+* We have shared a Dropbox folder with you. You will be required to upload your results there. To be able to do that, you need a dropbox account. Create one if you do not have it already.
 * Write Python code to pull the csv from dropbox using their [API](https://github.com/dropbox/dropbox-sdk-python).
 
   <details>
@@ -52,7 +52,7 @@ We want to see if you know about this standard software archiving process.
   </details>
 
 *Upload*
-* Push the two csvs back to dropbox using their API.
+* Push the two csvs back to Dropbox using their API.
 
 
 ### Task 2
@@ -76,7 +76,7 @@ We are testing that you know how to install a package from a conda channel
 
 #### Input
 
-The folder contains three images:
+The shared Dropbox folder contains three images:
 
 * given T1w image,
 * a standard T1w image (atlas)
@@ -90,15 +90,17 @@ The folder contains three images:
 
    You must make a subprocess call to ANTs executable `antsRegistrationSyNQuick.sh` from Python script.
    
-   Hint: after installing the ANTs package, you may do `antsRegistrationSyNQuick.sh --help` to form the sequence of
-   arguments passed to `antsRegistrationSyNQuick.sh`.
-   
+   <details><summary>Hint</summary>
+  
+   After installing the ANTs package, you may do `antsRegistrationSyNQuick.sh --help` to form the sequence of
+   arguments to pass to `antsRegistrationSyNQuick.sh`.
+  
+   </details>
    
 2. The registered image will contain only integer lables. Computationally, it is a 3-D volume.
-   Binarize it for each label and count the number of ones.
+   Binarize it for each label and count the number of 1's.
 
-
-3. Do string processing of the look up table to extract to extract the first and second columns.
+3. Do string processing of the look up table to extract the first and second columns.
 
 4. Save your results in a CSV file with three columns:
     
@@ -108,6 +110,6 @@ The folder contains three images:
 | 24 | CSF | 4567 |
 | .. | .. | .. |
 
-5. Upload the CSV file to dropbox, feel free to drag and drop this time.
+5. Upload the CSV file to the Dropbox folder used in task 1. Feel free to drag and drop this time.
 
 
