@@ -73,6 +73,7 @@ In this task, we ask you to do just the above.
 * Python 3
 * Libraries: pandas, nibabel
 * ANTs: you may install our conda package from `pnlbwh` channel
+
   We are testing that you know how to install a package from a conda channel
 
 
