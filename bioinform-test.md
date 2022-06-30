@@ -1,5 +1,5 @@
 The coding test consists of one arithmatic task and one neuroimaging task. 
-Both will appear at work at our laboratory. Please create a GitHub repository with all your codes 
+Both will appear at work at our laboratory. As you work on the problems, please create a GitHub repository with all your codes 
 and write a skeletal `README.md` describing your workflow. No need to go overboard with writing README.md. 
 We want to see if you know about this standard software archiving process.
 
@@ -58,7 +58,7 @@ We want to see if you know about this standard software archiving process.
 ### Task 2
 
 Oftentimes, we have to compute volumes of different brain regions--cerebellum, thalamus, ventricle etc.
-For this purpose, we superimpose a given T1w image upon a standard T1w image whose region boundaries are known.
+For this purpose, we superimpose a given T1w image upon an standard image whose region boundaries are known.
 The latter image is called an atlas. It consists of integer labels defined by the numbers under `#No.`
 column in [this](https://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/AnatomicalROI/FreeSurferColorLUT) look up table.
 After superimposition, counts of the labels give volumes of respective brain regions. The superimposition is achieved
@@ -100,7 +100,7 @@ The shared Dropbox folder contains three images:
    Binarize your atlas for each integer label present in it. Multiply the registered image with the binary image.
    Count the number of 1's in the resultant image. This count gives you the volume of that brain region.
 
-3. Do string processing of the look up table to extract the first and second columns. Thus, you obtain the name of brain regions
+3. Do string processing of the look up table to extract the first and second columns. Thus, you obtain the names of brain regions
    corresponding to integer labels.
 
 4. Save your results in a CSV file with three columns:
@@ -114,3 +114,8 @@ The shared Dropbox folder contains three images:
 5. Upload the CSV file to the Dropbox folder used in task 1. Feel free to drag and drop this time.
 
 
+
+
+---
+
+Please open GitHub issues should you have any questions. We shall respond to you through that. Our GitHub handles are `tashrifibllah` and `yrathi`.
