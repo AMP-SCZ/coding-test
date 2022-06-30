@@ -63,35 +63,48 @@ via popular brain image registration tools e.g. [ANTs](https://surfer.nmr.mgh.ha
 In this task, we ask you to do just the above.
 
 
-Prerequisite 
+#### Prerequisite
+
+* Python 3
+* Libraries: pandas, nibabel
+* ANTs: you may install our conda package from `pnlbwh` channel
+We are testing that you know how to install a package from a conda channel
 
 
+#### Input
 
-Input to your program:
-    given T1 image,
-    atlas,
-    standard T1 image
+The folder contains three images:
+
+* given T1w image,
+* a standard T1w image (atlas)
+* you should download the [FreeSurfer](https://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/AnatomicalROI/FreeSurferColorLUT) look up table by your known method
   
 
-Install Python >= 3.6
-    nibabel, pandas, ANTs (hint for downloading)
-Load IIT structural atlas (hint for downloading)
-FreeSurfer look up table (hint for downloading)
-    some string processing
-    
-Register given T1 image to the space of IIT atlas
-    must do it through subprocess call from Python
 
-Count the volume of each region
-    Hint:
-        The registered image contains only integer lables
-        Binarize the registered image by each integer
-        Volume is the sum of ones in the above
-        
-Save the volumes in a CSV file:
+#### Workflow
     
-        region name,volume
+1. Register the given T1 image to the space of atlas
 
-Upload the result to dropbox
-Download the images from dropbox
-Write a GitHub repository with all your codes, and a skeletal README
+   You must make a subprocess call to ANTs executable `antsRegistrationSyNQuick.sh` from Python script.
+   
+   Hint: after installing the ANTs package, you may do `antsRegistrationSyNQuick.sh --help` to form the sequence of
+   arguments passed to `antsRegistrationSyNQuick.sh`.
+   
+   
+2. The registered image will contain only integer lables. Computationally, it is a 3-D volume.
+   Binarize it for each label and count the number of ones.
+
+
+3. Do string processing of the look up table to extract to extract the first and second columns.
+
+4. Save your results in a CSV file with three columns:
+    
+| label | name | volume |
+| - | - | - |
+| 16 | Brain-Stem | 123
+| 24 | CSF | 4567 |
+| .. | .. | .. |
+
+5. Upload the CSV file to dropbox, feel free to drag and drop this time.
+
+
