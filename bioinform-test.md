@@ -87,9 +87,7 @@ The shared Dropbox folder contains three images:
 
 #### Workflow
     
-1. Register the given T1 image to the space of `atlas-T1w.nii.gz`
-
-   You can do it directly in your terminal.
+1. Register the given T1 image to the space of `atlas-T1w.nii.gz`. You can do it directly in your terminal.
    
    <details><summary>Hint</summary>
   
@@ -102,7 +100,8 @@ The shared Dropbox folder contains three images:
    Binarize your atlas for each integer label present in it. Multiply the registered image with the binary image.
    Count the number of 1's in the resultant image. This count gives you the volume of that brain region.
 
-3. Do string processing of the look up table to extract the first and second columns.
+3. Do string processing of the look up table to extract the first and second columns. Thus, you obtain the name of brain regions
+   corresponding to integer labels.
 
 4. Save your results in a CSV file with three columns:
     
