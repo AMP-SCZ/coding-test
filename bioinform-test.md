@@ -78,8 +78,9 @@ We are testing that you know how to install a package from a conda channel
 
 The shared Dropbox folder contains three images:
 
-* given T1w image,
-* a standard T1w image (atlas)
+* given T1w image
+* an atlas with integer labels (`atlas-integer-labels.nii.gz`)
+* a T1w image in the space of atlas (`atlas-T1w.nii.gz`)
 * you should download the [FreeSurfer](https://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/AnatomicalROI/FreeSurferColorLUT) look up table by your known method
   
 
