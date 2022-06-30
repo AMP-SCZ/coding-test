@@ -1,6 +1,8 @@
-## Input
-A csv file `enroll_data.csv` in a dropbox folder named `recruitment_project` with columns:
-> site ID, date of consent, cohort, birth date
+The coding test consists of one arithmatic task and one neuroimaging task. 
+Both will appear at work at our laboratory. Please create a GitHub repository with all your codes 
+and write a skeletal README.md describing your workflow. No need to go overboard with writing README.md. 
+We want to see if you know about this standard software archiving process.
+
 
 
 ### Task 1
