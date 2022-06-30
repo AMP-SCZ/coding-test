@@ -118,4 +118,4 @@ The shared Dropbox folder contains three images:
 
 ---
 
-Please open GitHub issues should you have any questions. We shall respond to you through that. Our GitHub handles are `tashrifibllah` and `yrathi`.
+Please open GitHub issues under this repository should you have any questions. We shall respond to you through that. Our GitHub handles are `tashrifibllah` and `yrathi`.
