@@ -68,17 +68,17 @@ via popular brain image registration tools e.g. [ANTs](https://surfer.nmr.mgh.ha
 In this task, we ask you to do just the above.
 
 
-#### Prerequisite
+*Prerequisite*
 
 * Python 3
 * Libraries: pandas, nibabel
 * ANTs: you may install our conda package from `pnlbwh` channel
-We are testing that you know how to install a package from a conda channel
+  We are testing that you know how to install a package from a conda channel
 
 
-#### Input
+*Input*
 
-The shared Dropbox folder contains three images:
+  The shared Dropbox folder contains three images:
 
 * given T1w image
 * an atlas with integer labels (`atlas-integer-labels.nii.gz`)
@@ -87,7 +87,7 @@ The shared Dropbox folder contains three images:
   
 
 
-#### Workflow
+*Workflow*
     
 1. Register the given T1 image to the space of `atlas-T1w.nii.gz`. You can do it directly in your terminal.
    
@@ -107,11 +107,11 @@ The shared Dropbox folder contains three images:
 
 4. Save your results in a CSV file with three columns:
     
-| label | name | volume |
-| - | - | - |
-| 16 | Brain-Stem | 123
-| 24 | CSF | 4567 |
-| .. | .. | .. |
+    | label | name | volume |
+    | - | - | - |
+    | 16 | Brain-Stem | 123
+    | 24 | CSF | 4567 |
+    | .. | .. | .. |
 
 5. Upload the CSV file to the Dropbox folder used in task 1. Feel free to drag and drop this time.
 
