@@ -2,6 +2,7 @@ The coding test consists of one arithmatic task and one neuroimaging task.
 Both will appear at work at our laboratory. As you work on the problems, please create a GitHub repository with all your codes 
 and write a skeletal `README.md` describing your workflow. No need to go overboard with writing README.md. 
 We want to see if you know about this standard software archiving process.
+Once you have completed the coding test, please let us know so we can review your work.
 
 ---
 
