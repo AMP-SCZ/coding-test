@@ -102,7 +102,7 @@ In this task, we ask you to do just the above.
 
 2. Now your registered image is in the space of the atlas and is ready to superimpose on the atlas.
    Binarize your atlas for each integer label present in it. Multiply the registered image with the binary image.
-   Count the number of 1's in the resultant image. This count gives you the volume of that brain region.
+   Count the number of non-zeros in the resultant image. This count gives you the volume of that brain region.
 
 3. Do string processing of the look up table to extract the first and second columns. Thus, you obtain the names of brain regions
    corresponding to integer labels.
